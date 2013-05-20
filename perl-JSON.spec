@@ -1,7 +1,7 @@
 # This spec file is from Fedora and adapted to Mer
 Name:           perl-JSON
 Summary:        Parse and convert to JSON (JavaScript Object Notation)
-Version:        2.57
+Version:        2.55
 Release:        1
 License:        GPL+ or Artistic
 Source0:        JSON-%{version}.tar.gz 
@@ -38,7 +38,7 @@ data structure into each other. For JSON, see http://www.crockford.com/JSON/.
 %prep
 # Adjusting %%setup since git-pkg unpacks to src/
 # %%setup -q -n JSON-%%{version}
-%setup -q -n JSON-%{version} -n src
+%setup -q -n src
 
 # make rpmlint happy...
 find .  -type f -exec chmod -c -x {} +
